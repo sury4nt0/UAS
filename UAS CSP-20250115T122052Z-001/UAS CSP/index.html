@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>UAS CSP</title>
+    <!-- Link CSS Bootstrap ONLINE -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <style>
+      .navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 5%;
+  z-index: 1030;
+}
+
+body {
+  padding-top: 56px; /* Menyesuaikan tinggi navbar */
+  padding-bottom: 40px; /* Menyesuaikan tinggi footer */
+}
+
+      html {
+        scroll-behavior: smooth;
+      }
+      .product-gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      .product-item {
+        flex: 1 1 calc(33.333% - 20px); 
+        box-sizing: border-box;
+        text-align: center;
+        border: 1px solid #ddd;
+        padding: 10px;
+        border-radius: 5px;
+        background-color: #fff;
+      }
+      .product-item img {
+        width: 100%;
+        height: auto;
+      }
+      .product-item h5 {
+        margin-top: 10px;
+        font-size: 1.1rem;
+        font-weight: bold;
+      }
+      .product-item p {
+        font-size: 1rem;
+        color: #28a745;
+        margin-top: 5px;
+      }
+      .product-item button {
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <section id="menu">
+        <nav class="navbar navbar-expand-lg bg-success">
+            <div class="container-fluid">
+              <a class="navbar-brand text-white d-flex align-items-center" href="#">
+                <img src="Image/Logo.jpeg" alt="Logo" width="30" height="30" class="rounded-circle me-2">
+                 Muhmut Design</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item text-white">
+                    <a class="nav-link active text-white" aria-current="page" href="#beranda">Beranda</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#produk">Produk</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#lokasi">Lokasi</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#SOSIAL-MEDIA">Sosial Media</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    </section>
+
+    <section id="beranda" style="padding: 50px 0; background-color: #e9ecef;">
+      <span class="descberanda">
+        Website kami dapat memberikan pengalaman unik untuk mengubah foto biasa Anda menjadi karya seni lukis yang indah dan personal.<br> Dengan teknologi canggih dan sentuhan artistik dari tim profesional, kami mengubah foto Anda menjadi berbagai gaya lukisan, mulai dari impresionisme hingga realisme,<br> dengan detail yang memukau. 
+        Apakah Anda ingin menghadirkan kenangan indah dalam bentuk lukisan yang menawan atau mencari hadiah spesial untuk orang terdekat?<br> Kami siap membantu Anda mewujudkannya!
+    </span> <br> <br> <br>
+        <!-- Carousel Section -->
+        <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="Image/THUMNAIL.jpeg" class="d-block w-100" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+              <img src="Image/E.jpg" class="d-block w-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+              <img src="Image/F.jpg" class="d-block w-100" alt="Slide 3">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="produk" style="padding: 50px 0; background-color: #f8f9fa;">
+      <div class="container">
+        <h1>Produk Kami</h1>
+        <div class="card-group" id="productGallery">
+          <!-- Product 1: Desain Interior -->
+          <div class="card">
+            <img src="Image/A.jpg" class="card-img-top" alt="Desain Interior">
+            <div class="card-body">
+              <h5 class="card-title">Desain Interior</h5>
+              <p class="card-text">Desain untuk ruang fisik seperti rumah, kantor, atau tempat usaha lainnya. Fokus utama pada penataan ruang, pemilihan furnitur, pencahayaan, serta elemen dekoratif untuk menciptakan suasana yang fungsional dan estetis.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+          </div>
+          <!-- Product 2: Desain Grafis -->
+          <div class="card">
+            <img src="Image/B.jpg" class="card-img-top" alt="Desain Grafis">
+            <div class="card-body">
+              <h5 class="card-title">Desain Grafis</h5>
+              <p class="card-text">Desain visual yang digunakan dalam media digital atau cetak. Termasuk desain logo, brosur, poster, iklan, dan materi branding lainnya yang bertujuan untuk menyampaikan pesan secara visual dengan kreativitas dan estetika yang menarik.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+          </div>
+          <!-- Product 3: Desain Produk -->
+          <div class="card">
+            <img src="Image/C.jpg" class="card-img-top" alt="Desain Produk">
+            <div class="card-body">
+              <h5 class="card-title">Desain Produk</h5>
+              <p class="card-text">Desain yang fokus pada penciptaan atau pengembangan produk fisik. Bisa meliputi desain untuk kemasan produk, produk konsumen, atau alat-alat khusus dengan mempertimbangkan aspek fungsionalitas, ergonomi, serta estetika visual produk.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-body-secondary">Last updated 3 mins ago</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <section id="lokasi" class="py-5 bg-light">
+      <div class="container text-center">
+        <p>Alamat: Jl. Soekarno Hatta No.1A, Malang, Jawa Timur, Indonesia.</p>
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe 
+            class="embed-responsive-item"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3951.58854601056!2d112.62404777405217!3d-7.937967679058059!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd629e6b8f41bcf%3A0x8b409da605dc7bd9!2sINSTITUT%20ASIA!5e0!3m2!1sen!2sid!4v1737443026422!5m2!1sen!2sid" 
+            width="100%" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade" 
+            aria-label="Lokasi INSTITUT ASIA">
+          </iframe>
+        </div>
+      </div>
+    </section>
+    
+
+    <section id="SOSIAL-MEDIA" style="padding: 50px 0; background-color: #f8f9fa;">
+      <br> <h1>Sosial Media</h1> <br>
+      <div class="container">
+        <a href="https://www.instagram.com/muhmut_design?igsh=MWx6M2g4OTIhYThieg==" target="_blank" class="btn btn-outline-danger">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+              <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"></path>
+            </svg>
+            Instagram
+        </a>
+        
+        <a href="https://www.facebook.com/ryan.xc.2025" target="_blank" class="btn btn-outline-danger">
+        
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+              <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"></path>
+            </svg>
+            Facebook
+         
+        </a>
+        
+        <a href="https://wa.me/081237153749" target="_blank" class="btn btn-outline-danger">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+              <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"></path>
+            </svg>
+            WhatsApp
+        </a>
+      </div>
+    </section>
+    
+
+    <footer class="bg-success text-white py-2">
+      <div class="container text-center">
+        <p style="font-size: 12px;"> copyright - Suryanto @ 2025</p>
+      </div>
+    </footer>
+
+    <!--  Link JS Bootstrap ONLINE -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+  </body>
+</html>
